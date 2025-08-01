@@ -1,9 +1,10 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: Markdown issue template
+about: the less interactive one
 title: ''
 labels: ''
 assignees: ''
+type: 'Task'
 
 ---
 
