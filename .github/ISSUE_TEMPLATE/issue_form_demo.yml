@@ -2,6 +2,7 @@ name: The github one
 description: this the form that github uses as a sample.
 title: "[Bug]: "
 labels: ["bug", "triage"]
+type: Task
 projects: ["octo-org/1", "octo-org/44"]
 assignees:
   - chiaberry
