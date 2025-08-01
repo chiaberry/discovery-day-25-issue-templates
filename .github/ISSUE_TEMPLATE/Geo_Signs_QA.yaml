@@ -4,7 +4,7 @@ title: "Signs GIS QA/QC Support "
 labels: "Project: DTS GIS QC Support for SMD, Service: Geo, Type: Data, Workgroup:SMD"
 projects: []
 assignees:
-  - OwenAMyers
+  - chiaberry
 body:
   - type: markdown
     attributes:
@@ -16,7 +16,8 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "Regular QA/QC of SMD Sign Assets. New work orders for sign asset installs and removals are loaded into the dataset on a weekly occurrence. As the quantity of incoming sign asset data varies, the level of work and amount of time spent also varies. Generally, I tend to spend anywhere from 8 to 30 hours performing QA/QC on this dataset. \
-       Additionally, there is the clean-up project, prioritizing clean-up of certain MUTCD codes throughout older data where QA was never completed. I am approximately 2/3 through this clean-up project for zones Alpha and Bravo which encompass most of downtown and central Austin."
+      value: |
+        "Regular QA/QC of SMD Sign Assets. New work orders for sign asset installs and removals are loaded into the dataset on a weekly occurrence. As the quantity of incoming sign asset data varies, the level of work and amount of time spent also varies. Generally, I tend to spend anywhere from 8 to 30 hours performing QA/QC on this dataset. \
+        Additionally, there is the clean-up project, prioritizing clean-up of certain MUTCD codes throughout older data where QA was never completed. I am approximately 2/3 through this clean-up project for zones Alpha and Bravo which encompass most of downtown and central Austin."
     validations:
       required: true
