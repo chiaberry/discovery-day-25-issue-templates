@@ -27,8 +27,7 @@ body:
       label: A dropdown
       description: Is there something that changes periodically? maybe zones?
       options:
-        - Alpha
-        - Bravo
-      default: 0
+        - label: Alpha
+        - label: Bravo
     validations:
       required: false
