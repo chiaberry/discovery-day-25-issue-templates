@@ -2,7 +2,6 @@ name: Geo test
 description: this the form that github uses as a sample.
 title: "Signs GIS QA/QC Support "
 labels: "Project: DTS GIS QC Support for SMD, Service: Geo, Type: Data, Workgroup:SMD"
-type: "Task"
 projects: []
 assignees:
   - OwenAMyers
