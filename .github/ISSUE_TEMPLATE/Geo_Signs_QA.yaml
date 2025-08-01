@@ -21,3 +21,14 @@ body:
         Additionally, there is the clean-up project, prioritizing clean-up of certain MUTCD codes throughout older data where QA was never completed. I am approximately 2/3 through this clean-up project for zones Alpha and Bravo which encompass most of downtown and central Austin.
     validations:
       required: true
+  - type: checkboxes
+    id: what-else
+    attributes:
+      label: A dropdown
+      description: Is there something that changes periodically? maybe zones?
+      options:
+        - Alpha
+        - Bravo
+      default: 0
+    validations:
+      required: false
