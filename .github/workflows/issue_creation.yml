@@ -1,0 +1,38 @@
+name: Create Geo Forestry Issue
+on:
+  schedule:
+    - cron: 0 07 1-7 * 1
+  workflow_dispatch:
+
+jobs:
+  create_issue:
+    name: Create team sync issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create Geo Forestry issue
+        run: |
+          new_issue_url=$(gh issue create \
+            --title "$TITLE" \
+            --assignee "$ASSIGNEES" \
+            --label "$LABELS" \
+            --body "$BODY")
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          TITLE: Overwrite Extracted Urban Trail Sidewalks Dataset for Urban Forestry Inspector Map
+          ASSIGNEES: chiaberry
+          LABELS:  "Service: Geo, Workgroup: Urban Forestry, Type: Data"
+          BODY: |
+            Overwrite the [Extracted Sidewalks](https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/Urban_trail_features_extract/FeatureServer) dataset for Urban Forestry inspectors to use in the offline AGOL map
+
+            **Steps:** 
+            - [ ] Bring Sidewalks dataset into ArcPro Extracted Sidewalks - and filter for sidewalks that are part of the Urban Trail Network and maintained by the City of Austin
+                - URBAN_TRAIL_NETWORK is Y
+                - Maintenance agency excludes: Outside Full Purpose Jurisdiction, TxDOT Right of Way, Private, Toll Authority or MANAGING_AGENCY is blank
+            - [ ] Disable sync on the existing Extracted Sidewalks AGOL dataset
+            - [ ] Overwrite the entire service manually and republish to AGOL
+            - [ ] Enable sync again to allow users to use offline mode
+          PINNED: false
+          CLOSE_PREVIOUS: false
