@@ -23,7 +23,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           TITLE: Overwrite Extracted Urban Trail Sidewalks Dataset for Urban Forestry Inspector Map
           ASSIGNEES: chiaberry
-          LABELS:  "Service: Geo, Workgroup:DTS, Type: Data"
+          LABELS:  "Service: Geo,Workgroup:DTS,Type: Data"
           BODY: |
             Overwrite the [Extracted Sidewalks](https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/Urban_trail_features_extract/FeatureServer) dataset for Urban Forestry inspectors to use in the offline AGOL map
 
